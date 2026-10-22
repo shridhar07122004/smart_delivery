@@ -2,7 +2,7 @@
 
 A native desktop dashboard that applies **Ant Colony Optimization (ACO)** to a synthetic delivery-routing Travelling Salesperson Problem. It generates checkpoints on an abstract 100 × 100 coordinate grid, searches for a short closed route, and shows live convergence and pheromone information.
 
-The repository also includes a static `index.html` project page that can be deployed to Vercel. The interactive optimizer itself is a native Tkinter desktop application and runs locally; Vercel hosts the project page, not the desktop GUI.
+The repository also includes a static project page in `public/index.html` that can be deployed to Vercel. `vercel.json` selects the static `Other` preset and serves only `public`, preventing the root-level desktop `main.py` from being treated as a serverless function. The interactive optimizer itself is a native Tkinter desktop application and runs locally; Vercel hosts the project page, not the desktop GUI.
 
 ## Objectives
 
